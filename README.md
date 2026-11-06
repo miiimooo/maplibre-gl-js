@@ -8,6 +8,16 @@
 
 # MapLibre GL JS
 
+> [!IMPORTANT]
+> **This is `maplibre-gl-v5-security`, an unofficial community build.** It is MapLibre GL JS **5.24.0** plus the attribution sanitizer fixes for [GHSA-jrc7-96c5-q579](https://github.com/maplibre/maplibre-gl-js/security/advisories/GHSA-jrc7-96c5-q579), cherry-picked unchanged from MapLibre `main` ([#8189](https://github.com/maplibre/maplibre-gl-js/pull/8189), [#8396](https://github.com/maplibre/maplibre-gl-js/pull/8396), [#8528](https://github.com/maplibre/maplibre-gl-js/pull/8528), [#8532](https://github.com/maplibre/maplibre-gl-js/pull/8532), [#8571](https://github.com/maplibre/maplibre-gl-js/pull/8571)). It exists for projects that still need the v5 UMD bundle. If you can, upgrade to the official [`maplibre-gl`](https://www.npmjs.com/package/maplibre-gl) v6 instead.
+>
+> It is not published or supported by the MapLibre organization, so please report problems [here](https://github.com/miiimooo/maplibre-gl-js/issues), not upstream.
+>
+> ```
+> npm install maplibre-gl-v5-security
+> ```
+> The files are the same as in `maplibre-gl`, so replace `node_modules/maplibre-gl/dist/…` with `node_modules/maplibre-gl-v5-security/dist/…` in your paths.
+
 [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg?style=flat)](LICENSE.txt) [![Version](https://img.shields.io/npm/v/maplibre-gl?style=flat)](https://www.npmjs.com/package/maplibre-gl) [![CI](https://github.com/maplibre/maplibre-gl-js/actions/workflows/test-all.yml/badge.svg)](https://github.com/maplibre/maplibre-gl-js/actions/workflows/test-all.yml) [![PRs](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](https://opensource.org/licenses/BSD-3-Clause) [![codecov](https://codecov.io/gh/maplibre/maplibre-gl-js/branch/main/graph/badge.svg)](https://codecov.io/gh/maplibre/maplibre-gl-js)
 
 **[MapLibre GL JS](https://maplibre.org/maplibre-gl-js/docs/API/)** is an open-source library for publishing maps on your websites or webview based apps. Fast displaying of maps is possible thanks to GPU-accelerated vector tile rendering.

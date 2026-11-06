@@ -5,6 +5,18 @@
 ### 🐞 Bug fixes
 - _...Add new stuff here..._
 
+## 5.24.1 (`maplibre-gl-v5-security`, unofficial)
+
+Published as [`maplibre-gl-v5-security`](https://www.npmjs.com/package/maplibre-gl-v5-security). This is 5.24.0 plus the attribution sanitizer fixes for [GHSA-jrc7-96c5-q579](https://github.com/maplibre/maplibre-gl-js/security/advisories/GHSA-jrc7-96c5-q579), cherry-picked from `main`.
+
+### 🐞 Bug fixes
+
+- Fix `DOM.sanitize` skipping the attribute after each removed one ([#8189](https://github.com/maplibre/maplibre-gl-js/pull/8189))
+- Improve sanitization ([#8396](https://github.com/maplibre/maplibre-gl-js/pull/8396))
+- Insert sanitized attribution as DOM nodes instead of re-parsing serialized HTML ([#8528](https://github.com/maplibre/maplibre-gl-js/pull/8528))
+- Replace the sanitizer with an allow list ([#8532](https://github.com/maplibre/maplibre-gl-js/pull/8532))
+- Sanitize each attribution before joining them ([#8571](https://github.com/maplibre/maplibre-gl-js/pull/8571))
+
 ## 5.24.0
 
 ### ✨ Features and improvements
